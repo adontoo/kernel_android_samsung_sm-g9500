@@ -1,0 +1,55 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build project=open
+build common config=msm8998_sec_defconfig 
+build variant config=msm8998_sec_dreamqlte_usa_open_defconfig 
+build secure option= 
+build SEANDROID option= 
+build kaslr defconfig=
+no directory : /home/adontoo/android/samsung/g9500/P/../../android/out/target/product/dreamqltevzw/obj/KERNEL_OBJ/arch/arm64/boot/dts/samsung
+make: Entering directory '/home/adontoo/android/samsung/g9500/P'
+make[1]: Entering directory '/home/adontoo/android/samsung/android/out/target/product/dreamqltevzw/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+drivers/input/touchscreen/Kconfig:1238:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:5:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:6:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:7:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:8:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:8:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:14:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:15:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:16:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:17:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:17:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:21:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:22:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:23:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:24:warning: ignoring unsupported character ''
+drivers/input/touchscreen/sec_ts_dual/Kconfig:24:warning: ignoring unsupported character ''
+drivers/Kconfig:237:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:6:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:6:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:9:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:10:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:11:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:12:warning: ignoring unsupported character ''
+boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
+***
+*** Can't find default configuration "arch/arm64/configs/msm8998_sec_defconfig"!
+***
+make[2]: *** [/home/adontoo/android/samsung/g9500/P/scripts/kconfig/Makefile:126: msm8998_sec_defconfig] Error 1
+make[1]: *** [/home/adontoo/android/samsung/g9500/P/Makefile:559: msm8998_sec_defconfig] Error 2
+make[1]: Leaving directory '/home/adontoo/android/samsung/android/out/target/product/dreamqltevzw/obj/KERNEL_OBJ'
+make: *** [Makefile:152: sub-make] Error 2
+make: Leaving directory '/home/adontoo/android/samsung/g9500/P'
