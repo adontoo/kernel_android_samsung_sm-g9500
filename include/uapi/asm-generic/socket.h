@@ -87,13 +87,17 @@
 #define SO_ATTACH_BPF		50
 #define SO_DETACH_BPF		SO_DETACH_FILTER
 
+#ifdef CONFIG_KNOX_NCM
 /* START_OF_KNOX_NPA */
 #define SO_SET_DOMAIN_NAME	55
 #define SO_SET_DNS_UID		56
 /* END_OF_KNOX_NPA */
+#endif
 
+#ifdef CONFIG_KNOX_NCM
 /* START_OF_KNOX_NPA */
 #define SO_SET_DNS_PID		58
 /* END_OF_KNOX_NPA */
+#endif
 
 #endif /* __ASM_GENERIC_SOCKET_H */

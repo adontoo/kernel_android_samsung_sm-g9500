@@ -8,6 +8,6 @@ mkdir out
 make -C $(pwd) O=$(pwd)/out ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android dreamqlte_usa_open_defconfig
 
 
-make -C $(pwd) O=$(pwd)/out ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android
+make -j18 -C $(pwd) O=$(pwd)/out ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- KCFLAGS=-mno-android
 
 cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
