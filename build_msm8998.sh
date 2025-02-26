@@ -369,4 +369,3 @@ rm -rf ./build.log
 	let "ELAPSED_TIME=$END_TIME-$START_TIME"
 	echo "Total compile time is $ELAPSED_TIME seconds"
 ) 2>&1	 | tee -a ./build.log
-
